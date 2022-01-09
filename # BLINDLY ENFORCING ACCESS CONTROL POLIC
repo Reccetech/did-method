@@ -1,0 +1,20 @@
+# BLINDLY ENFORCING ACCESS CONTROL POLICIES ON ENCRYPTED DATA USING ZERO-KNOWLEDGE
+
+##  Introduction
+
+The goal of Tom's thesis was to create an extension to the Glycos (P2P social networking system), that enforces access control rights without leaking data to the network.
+This accompliced by the use of zero-knowledge proofs, based upon the ideas of Nasoumzadeh and Joshi (OSNAC) that introduces a way to embed access control definitions into the ontology defition.
+
+
+
+## Zero-knowledge
+
+Zero-knowledge proofs can be classified as decribed by the medium article of Yun:
+
+*  Zero-knowledge proof: proof that a certain statement is true, without revealing the secret
+*  Zero-knowledge range proof:  proof that a certain value is in a certain range
+*  Zero-knowledge constraint system proof: Proof where the secret inputs are constrained, without revealing the secret inputs. Where the constraint system is the form of F(x1,x2,x3,...)=0
+
+Tom's thesis is based upon implementing the latter clasification where the 
+
+

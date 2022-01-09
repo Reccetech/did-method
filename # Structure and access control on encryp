@@ -1,0 +1,9 @@
+# Structure and access control on encrypted graphs for peer-to-peer online  social networks
+
+## Introduction
+
+## Related Work
+
+- Centralized OSN typically based upon Web 2.0 tools (Relational databases, Object-Relational-Mapping, REST API's ) where servers are typically are the trusted entities.
+- Federated environment, servers are also the engines to relay trust.
+- Peer-to-Peer: don't rely on trusted entities 
