@@ -1,5 +1,5 @@
-# Hedera Hashgraph DID Method Specification Test
-Version 0.9, Hedera Hashgraph
+# Hedera DID Method Specification
+Version 0.9.1
  
 ## Table of Contents 
 - [Hedera Hashgraph DID Method Specification](#hedera-hashgraph-did-method-specification)
@@ -7,7 +7,6 @@ Version 0.9, Hedera Hashgraph
   - [About](#about)
   - [Abstract](#abstract)
   - [Status of This Document](#status-of-this-document)
-  - [Motivation](#motivation)
   - [Hedera Hashgraph DID Method](#hedera-hashgraph-did-method)
     - [Namespace Specific Identifier (NSI)](#namespace-specific-identifier-nsi)
       - [Method-Specific DID URL Parameters](#method-specific-did-url-parameters)
@@ -30,7 +29,7 @@ Version 0.9, Hedera Hashgraph
   - [References](#references)
 
 ## About
-This [DID method specification](https://w3c-ccg.github.io/did-spec/#specific-did-method-schemes) conforms to the requirements in the DID specification currently published by the W3C Credentials Community Group. For more information about DIDs and DID method specifications, please see the [DID Primer](https://github.com/WebOfTrustInfo/rwot5-boston/blob/master/topics-and-advance-readings/did-primer.md) and [DID Spec](https://w3c.github.io/did-core/).
+The DID:Hedera method describes hows DIDs on Hedera mainnet and testnets are managed and the operations for creating, reading, updating, and deleting DIDs. The DID:Hedera 1.0 method replaces the 0.1 method published in 2020. This [DID method specification](https://w3c-ccg.github.io/did-spec/#specific-did-method-schemes) conforms to the requirements in the DID specification currently published by the W3C Credentials Community Group. For more information about DIDs and DID method specifications, please see the [DID Primer](https://github.com/WebOfTrustInfo/rwot5-boston/blob/master/topics-and-advance-readings/did-primer.md) and [DID Spec](https://w3c.github.io/did-core/).
 
 The following DID Method will be registered in the [DID Method Registry](https://w3c-ccg.github.io/did-method-registry/).
 
@@ -42,10 +41,7 @@ This document was published as an Editor's Draft.
 
 Publication as an Editor's Draft does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than a work in progress.
 
-## Motivation
-This document defines a binding of the Decentralized Identifier architecture to Hedera Hashgraph - specifically how to use the Hedera File Service to record membership in 'business application networks' (appnets) and how to use the Hedera Consensus Service (HCS) for CRUD mechanisms on DID documents stored in such business application network. An business application network is a network of computers that store some set of business data (such as DID Documents) in a shared state, and rely on the Hedera mainnet for timestamping and ordering the transactions that cause that business application network state to change. An business application network could be exclusively dedicated to managing DID Documents and other identity artifacts in its state, or it could itself be multi-purpose. For instance, a Supply Chain could establish an business application network and, in addition to using HCS for tracking the location of shipments, use the DID method defined here to manage the identities of the associated companies, employees, and IoT devices. The HCS model is designed to off load from the Hedera mainnet node the burden of disk writes and long term storage and so allow those nodes to be optimized for high throughput ordering of transactions. 
-
-## Hedera Hashgraph DID Method
+## Hedera DID Method
 The namestring that shall identify this DID method is: `hedera`
 
 A DID that uses this method MUST begin with the following prefix: `did:hedera`. Per the DID specification, this string MUST be in lowercase. The remainder of the DID, after the prefix, is the NSI specified below.
