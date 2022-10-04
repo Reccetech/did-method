@@ -1,4 +1,4 @@
-# Hedera Hashgraph DID Method Specification
+# Hedera Hashgraph DID Method Specification Test
 Version 0.9, Hedera Hashgraph
  
 ## Table of Contents 
